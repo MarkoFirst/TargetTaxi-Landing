@@ -1,221 +1,280 @@
 @media screen and (max-width: 1365px) {
-    .smart-advertising__item-desc .smart-advertising__title{
+    .smart-advertising__item-desc .smart-advertising__title {
         font-size: 54px;
         line-height: 58px;
     }
-    .smart-advertising__item-desc .smart-advertising__text{
+
+    .smart-advertising__item-desc .smart-advertising__text {
         font-size: 20px;
         line-height: 28px;
         padding: 48px 130px 40px 0;
     }
+
     .advantages__item-desc .advantages__title,
-    .full-control__item-desc .full-control__title{
+    .full-control__item-desc .full-control__title {
         font-size: 46px;
         line-height: 50px;
     }
+
     .advantages__item-desc .advantages__text,
     .full-control__item-desc .full-control__text,
-    .advantages__invite-block .invite-block__text{
+    .advantages__invite-block .invite-block__text {
         font-size: 19px;
         line-height: 25px;
     }
-    .advantages__invite-block .invite-block__text{
+
+    .advantages__invite-block .invite-block__text {
         margin-right: 30px;
     }
-    .full-control__comment-block .comment__desc{
+
+    .full-control__comment-block .comment__desc {
         font-size: 16px;
         line-height: 20px;
     }
-    .full-control__item-desc{
+
+    .full-control__item-desc {
         padding-left: 14%;
     }
-    .full-control__item-desc .full-control__comment-block{
+
+    .full-control__item-desc .full-control__comment-block {
         padding: 15px;
         margin-left: -15px;
     }
 
+    .scroll-img {
+        bottom: 10px;
+    }
+
 }
+
 @media screen and (max-width: 1023px) {
     .smart-advertising,
-    .advantages__items{
+    .advantages__items {
         padding: 40px 0 40px 9vw
     }
-    .header__items .item.logo img{
+
+    .header__items .item.logo img {
         max-height: 36px;
     }
-    .smart-advertising__item-desc .smart-advertising__title{
+
+    .smart-advertising__item-desc .smart-advertising__title {
         font-size: 34px;
         line-height: 38px;
     }
-    .smart-advertising__item-desc .smart-advertising__text{
+
+    .smart-advertising__item-desc .smart-advertising__text {
         font-size: 16px;
         line-height: 20px;
         padding: 30px 0 40px 0;
     }
+
     .smart-advertising__btn-block a,
     .post--btn .btn,
-    .early-access__items .item__btn{
+    .early-access__items .item__btn {
         padding: 10px;
         font-size: 16px;
         white-space: nowrap;
     }
-    .whom-why__items{
+
+    .whom-why__items {
         padding: 50px 9vw;
     }
-    .whom-why__item .item__title, .whom-why__item .item__desc{
+
+    .whom-why__item .item__title, .whom-why__item .item__desc {
         font-size: 16px;
         line-height: 20px;
     }
-    .advantages__item-desc{
+
+    .advantages__item-desc {
         padding: 15px 15px 0 0;
     }
+
     .advantages__item-desc .advantages-blue__title,
-    .advantages__invite-block .invite-block__title{
+    .advantages__invite-block .invite-block__title {
         font-size: 18px;
         line-height: 20px;
     }
+
     .advantages__item-desc .advantages__text,
     .full-control__item-desc .full-control__text,
-    .advantages__invite-block .invite-block__text{
+    .advantages__invite-block .invite-block__text {
         font-size: 16px;
         line-height: 22px;
     }
-    .advantages__item-desc .advantages__title, .full-control__item-desc .full-control__title{
+
+    .advantages__item-desc .advantages__title, .full-control__item-desc .full-control__title {
         font-size: 28px;
         line-height: 32px;
     }
-    .full-control__items{
+
+    .full-control__items {
         padding: 40px 7vw 40px 0;
     }
-    .full-control__comment-block .comment__desc{
+
+    .full-control__comment-block .comment__desc {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 20px;
     }
-    .comment__author img{
+
+    .comment__author img {
         max-height: 30px;
     }
-    .comment__author .author__desc{
+
+    .comment__author .author__desc {
         font-size: 12px;
     }
-    .early-access{
+
+    .early-access {
         padding: 40px 0 70px;
     }
-    .early-access__items .item__title{
+
+    .early-access__items .item__title {
         font-size: 41px;
         line-height: 46px;
     }
-    .early-access__items .item__desc{
+
+    .early-access__items .item__desc {
         font-size: 16px;
         line-height: 20px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .scroll-img {
+        width: 20px;
+    }
+}
+
 @media screen and (max-width: 479px) {
-    .smart-advertising, .advantages__items{
+    .smart-advertising, .advantages__items {
         grid-template-areas: ".";
         grid-template-columns: 1fr;
         padding: 30px 0 30px 15px;
     }
-    .smart-advertising__item-desc .smart-advertising__title{
+
+    .smart-advertising__item-desc .smart-advertising__title {
         font-size: 50px;
         line-height: 100%;
         padding-right: 15px;
         letter-spacing: -0.3125px;
     }
-    .right-img{
+
+    .right-img {
         grid-column-start: 1;
         grid-row-start: 2;
         grid-column-end: 2;
         grid-row-end: 3;
     }
-    .left-img{
+
+    .left-img {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
         justify-self: center;
     }
-    .header__items{
+
+    .header__items {
         padding: 8px 15px 0;
     }
-    .smart-advertising__item-desc .smart-advertising__text{
+
+    .smart-advertising__item-desc .smart-advertising__text {
         font-size: 24px;
         line-height: 34px;
         padding: 25px 15px 30px 0;
     }
-    .smart-advertising__btn-block{
+
+    .smart-advertising__btn-block {
         flex-direction: column;
         padding-right: 15px;
     }
+
     .smart-advertising__btn-block a,
-    .post--btn .btn{
+    .post--btn .btn {
         text-align: center;
         border-radius: 4px;
     }
-    .smart-advertising__btn-block .post{
+
+    .smart-advertising__btn-block .post {
         margin: 0 0 15px 0;
     }
-    .whom-why__items{
+
+    .whom-why__items {
         grid-template-areas: ".";
         grid-template-columns: 1fr;
         padding: 40px 15px;
         grid-row-gap: 30px
     }
-    .whom-why__item .item__title, .whom-why__item .item__desc{
+
+    .whom-why__item .item__title, .whom-why__item .item__desc {
         font-size: 22px;
         line-height: 32px;
     }
-    .advantages .advantages-logos__items{
+
+    .advantages .advantages-logos__items {
         grid-template-columns: repeat(3, 1fr);
         padding: 15px;
         grid-column-gap: 15px;
         grid-row-gap: 15px;
     }
-    .advantages__item-desc .advantages__title{
+
+    .advantages__item-desc .advantages__title {
         padding: 15px 0;
     }
-    .advantages__item-desc .advantages__title, .full-control__item-desc .full-control__title{
+
+    .advantages__item-desc .advantages__title, .full-control__item-desc .full-control__title {
         font-size: 40px;
         line-height: 40px;
     }
+
     .advantages__item-desc .advantages__text,
     .full-control__item-desc .full-control__text,
-    .advantages__invite-block .invite-block__text{
+    .advantages__invite-block .invite-block__text {
         font-size: 24px;
         line-height: 34px;
     }
-    .full-control__items{
+
+    .full-control__items {
         grid-template-areas: ".";
         grid-template-columns: 1fr;
         grid-row-gap: 30px;
         padding: 30px 15px 30px 0;
     }
-    .full-control__item-desc{
+
+    .full-control__item-desc {
         padding-left: 15px;
     }
-    .full-control__item-desc .full-control__text{
+
+    .full-control__item-desc .full-control__text {
         padding: 25px 0 30px;
     }
-    .full-control__item-desc .full-control__comment-block{
+
+    .full-control__item-desc .full-control__comment-block {
         margin-left: 0;
     }
-    .early-access{
+
+    .early-access {
         padding: 40px 0;
     }
+
     .early-access__items .item__title {
         font-size: 20px;
         line-height: 25px;
         padding: 18px 0;
     }
-    .early-access__items .item__desc{
+
+    .early-access__items .item__desc {
         font-size: 18px;
         line-height: 23px;
     }
-    .early-access__items .item__title{
 
-    }
-    .early-access .early-access__items .item__icon{
+    .early-access .early-access__items .item__icon {
         max-height: 60px;
+    }
+
+    .scroll-img {
+        display: none;
     }
 
 }
