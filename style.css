@@ -225,6 +225,118 @@
     margin-right: 90px;
 }
 
+.block {
+    margin: 25px 25px 0 0;
+    border-radius: 5px;
+    float: left;
+    width: 550px;
+    overflow: hidden;
+}
+
+.donut-chart-block {
+    overflow: hidden;
+}
+
+.donut-chart {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 2rem auto;
+    border-radius: 100%
+}
+
+.donut-chart .center {
+    background: #FFFFFF;
+    position: absolute;
+    top: 115px;
+    left: 115px;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    transform: rotate(-40deg);
+}
+
+.donut-chart .center .men, .donut-chart .center .women {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 32px;
+    left: 30px;
+}
+
+.donut-chart .center .men {
+    border: #DEDEDE 129px solid;
+    border-left: #DEDEDE 0 solid;
+    border-bottom-left-radius: 130px;
+    border-top-left-radius: 130px;
+}
+
+.donut-chart .center .women {
+    border: #F0F0F0 129px solid;
+    border-right: #F0F0F0 0 solid;
+    border-bottom-right-radius: 130px;
+    border-top-right-radius: 130px;
+    left: 162px;
+}
+
+.clip {
+    border-radius: 50%;
+    clip: rect(0px, 550px, 550px, 275px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.item {
+    border-radius: 50%;
+    clip: rect(0px, 275px, 550px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#section1 {
+    transform: rotate(35deg);
+}
+
+#section1 .item {
+    background: linear-gradient(180deg, #F390C6 19.82%, #9E90F3 100%);
+    transform: rotate(39deg);
+}
+
+#section2 {
+    transform: rotate(75deg);
+}
+
+#section2 .item {
+    background: linear-gradient(220.67deg, #7181FF -5.23%, #7CD0FF 92.8%);
+    transform: rotate(125deg);
+}
+
+#section3 {
+    transform: rotate(201deg);
+}
+
+#section3 .item {
+    background: linear-gradient(180deg, #FF7A7A 19.82%, #FFA360 100%);
+    transform: rotate(71deg);
+}
+
+#section4 {
+    transform: rotate(273deg);
+}
+
+#section4 .item {
+    background: linear-gradient(180deg, #7CE1B1 19.82%, #59C0FA 100%);
+    transform: rotate(121deg);
+}
+
+.donut-text {
+
+}
+
 /*-------------------- full control section -------------------------*/
 
 .full-control{
