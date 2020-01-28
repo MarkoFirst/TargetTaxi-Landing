@@ -1,5 +1,6 @@
 .header {
     background-color: #000000;
+    position: relative;
 }
 
 .header__items {
@@ -75,7 +76,8 @@
 
 .scroll-img {
     position: absolute; 
-    left: calc(50% - 30px); 
+    left: calc(50%);
+    transform: translateX(-50%);
     bottom: 40px; 
     width: 60px; 
     filter: brightness(0) invert(1);
