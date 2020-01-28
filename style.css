@@ -303,7 +303,6 @@
 /*-------------------- early access section -------------------------*/
 
 
-
 .early-access{
     padding: 70px 0 100px;
 }
@@ -335,6 +334,48 @@
 }
 
 .early-access__items .item__btn{
+    font-size: 18px;
+    color: #FFFFFF;
+    display: block;
+    padding: 15px 21px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+/*-------------------- bond section -------------------------*/
+
+.bond {
+    padding: 64px 0;
+    background-color: #000000;
+}
+
+.bond .bond__items{
+    padding: 0 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bond__items .item__title{
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    padding: 23px 0 30px;
+}
+
+.bond__items .item__desc{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    margin-bottom: 33px;
+}
+
+.bond__items .item__btn{
     font-size: 18px;
     color: #FFFFFF;
     display: block;
