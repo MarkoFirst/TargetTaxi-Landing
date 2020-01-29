@@ -176,7 +176,7 @@
 </div>
 
 <div class="popup" id="popup" style="display: none">
-	<form class="wrapper" id="form" action="mailto:targettaxi2019@gmail.com?subject=Test" method="post" enctype="text/plain">
+	<form class="wrapper" id="form" action="sendForm.php" method="post" enctype="multipart/form-data">
 		<h2>Чем мы можем Вам помочь?</h2>
 		<div class="content">
 			<input type="text" name="name" placeholder="Имя *">
@@ -190,7 +190,7 @@
 			</select>
 			<textarea name="text" id="textarea" cols="30" rows="10" placeholder="Текст"></textarea>
 		</div>
-		<input type="submit" class="item__btn btn-hover gradient-btn" value="Отправить">
+		<input type="submit" name="submit" class="item__btn btn-hover gradient-btn" value="Отправить">
 	</form>
 </div>
 
