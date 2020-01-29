@@ -156,7 +156,11 @@
                 <img class="item__icon" src="images/early-access-img.svg" alt="">
                 <p class="item__title">Мы будем рады слышать о вашей заинтересованности</p>
                 <!--<p class="item__desc">Получите ранний доступ к Target Taxi со скидкой 50%</p>-->
-                <a href="mailto:targettaxi2019@gmail.com?subject=Хотим узнать больше и разместить рекламу!" class="item__btn btn-hover gradient-btn" style="margin-top: 40px;transform: scale(1.5)">Запуск рекламной компании</a>
+                <button
+		                onclick="showPopup()"
+		                class="item__btn btn-hover gradient-btn" style="margin-top: 40px;transform: scale(1.5)">
+	                Запуск рекламной компании
+                </button>
             </div>
         </div>
     </section>
@@ -170,5 +174,41 @@
 			</div>
 		</section>
 </div>
+
+<div class="popup" id="popup" style="display: none">
+	<form class="wrapper" id="form" action="mailto:targettaxi2019@gmail.com?subject=Test" method="post" enctype="text/plain">
+		<h2>Чем мы можем Вам помочь?</h2>
+		<div class="content">
+			<input type="text" name="name" placeholder="Имя *">
+			<input type="email" name="email" placeholder="Почта *">
+			<input type="number" name="number" placeholder="Номер телефона">
+			<select name="whoAreU" id="whoAreU" title="Кто ты?">
+				<option value="Рекламодатель">Рекламодатель</option>
+				<option value="Водитель">Водитель</option>
+				<option value="Служба такси">Служба такси</option>
+				<option value="Другое">Другое</option>
+			</select>
+			<textarea name="text" id="textarea" cols="30" rows="10" placeholder="Текст"></textarea>
+		</div>
+		<input type="submit" class="item__btn btn-hover gradient-btn" value="Отправить">
+	</form>
+</div>
+
+<script>
+	window.onload = function() {
+	    document.getElementById('popup').addEventListener('click', function() {
+          document.getElementById('popup').style.display = 'none';
+	    });
+
+      document.getElementById('form').addEventListener('click', function(event) {
+          event.stopImmediatePropagation();
+      });
+	};
+
+	function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
