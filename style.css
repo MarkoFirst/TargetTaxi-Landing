@@ -463,6 +463,7 @@
     padding: 15px 21px;
     border-radius: 12px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*-------------------- bond section -------------------------*/
@@ -512,30 +513,27 @@
     position: fixed;
     left: 0;
     top: 0;
-
     height: 100vh;
-    width: 100vw;
-
-    padding: 60px;
-
+    width: calc(100% - 16px);
+    padding: 0 8px;
     display: flex;
     justify-content: center;
-
     background: rgba(193, 211, 234, 0.61);
 }
 
 .popup .wrapper {
     border-radius: 8px;
     background: white;
-    width: 80%;
-    height: 700px;
-    padding: 44px;
+    padding: 40px 20px;
     text-align: center;
+    max-width: 320px;
+    margin: 20px auto 0;
 }
 
-.popup .wrapper h2 {
-    margin: 40px;
-    font-size: 44px;
+.popup .wrapper .popup__title {
+    padding-bottom: 21px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .popup .wrapper .content {
@@ -545,16 +543,23 @@
     justify-content: space-around;
 }
 
-.popup .wrapper .content input, .popup .wrapper .content select {
-    width: 300px;
-    height: 44px;
+.popup .wrapper .content .form-item {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 25px;
     border-radius: 8px;
+    outline: none;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    padding: 12px 0 12px 12px;
+}
+.popup .wrapper .content .form-item:last-child {
+    height: auto;
 }
 
 .popup .wrapper .content textarea {
     width: 100%;
     height: 200px;
-    margin: 40px;
     border-radius: 8px;
 }
 
@@ -562,9 +567,11 @@
     font-size: 18px;
     color: #FFFFFF;
     display: block;
-    padding: 15px 21px;
+    padding: 12px;
     border-radius: 12px;
     text-decoration: none;
     width: 200px;
+    height: 46px;
     margin: 0 auto;
+    border: none;
 }

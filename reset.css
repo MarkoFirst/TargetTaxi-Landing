@@ -205,6 +205,7 @@ textarea {
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
 /**
