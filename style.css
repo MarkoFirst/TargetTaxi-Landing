@@ -141,6 +141,10 @@
     line-height: 32px;
 }
 
+.whom-why__item .item__image {
+    max-width: 250px;
+}
+
 .whom-why__item .item__desc {
     font-size: 16px;
 }
