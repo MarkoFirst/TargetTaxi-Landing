@@ -474,7 +474,7 @@
 
 .bond .bond__items{
     padding: 0 16px;
-    max-width: 600px;
+    max-width: 1024px;
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -505,6 +505,34 @@
     padding: 15px 21px;
     border-radius: 12px;
     text-decoration: none;
+}
+
+.video-block {
+    position: relative;
+    height: 600px;
+    width: 100vw;
+}
+
+.video-block > .video {
+    width: 820px;
+
+    position: absolute;
+    top: 56px;
+    left: calc(50% + 8px);
+    transform: translateX(-50%);
+
+    z-index: 1;
+
+    clip: rect(auto, 768px, auto, auto);
+}
+
+.video-block > .tablet {
+    width: 800px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .popup {
