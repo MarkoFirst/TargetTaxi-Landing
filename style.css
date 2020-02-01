@@ -259,6 +259,45 @@
     margin: 2rem auto;
     border-radius: 100%
 }
+.donut-chart .client__age{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    text-align: center;
+}
+
+.donut-chart .client__age h2:first-child {
+    font-size: 32px;
+}
+
+.donut-chart #kid{
+    right: 62px;
+    top: 124px;
+}
+.donut-chart #student{
+    right: 84px;
+    top: 400px;
+}
+.donut-chart #ur-mom{
+    left: 60px;
+    top: 370px;
+}
+.donut-chart #grand{
+    left: 137px;
+    top: 67px;
+}
+
+.donut-chart #men {
+    left: 193px;
+    top: 288px;
+    color: black;
+}
+
+.donut-chart #women {
+    left: 283px;
+    top: 201px;
+    color: black;
+}
 
 .donut-chart .center {
     background: #f7f7f7;
@@ -287,7 +326,7 @@
 }
 
 .donut-chart .center .women {
-    border: #f0b5c5 129px solid;
+    border: #F0F0F0 129px solid;
     border-right: #F0F0F0 0 solid;
     border-bottom-right-radius: 130px;
     border-top-right-radius: 130px;
