@@ -125,7 +125,7 @@
     display: grid;
     padding: 75px 9vw;
     justify-content: flex-end;
-    align-items: center;
+    /*align-items: center;*/
     grid-auto-columns: 1fr;
     grid-column-gap: 27px;
     grid-row-gap: 16px;

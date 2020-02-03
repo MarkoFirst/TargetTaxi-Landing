@@ -179,7 +179,8 @@
     }
 
     .video-block > .video {
-        top: 32px;
+        top: 24px;
+        left: 50%;
     }
 
     .smart-advertising, .advantages__items {

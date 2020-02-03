@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="mediaQueries.css">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 <div class="main__body">
@@ -50,7 +51,7 @@
 						рынком. У них есть кредитные карты, они образованы и технически подкованы.</p>
 				</div>
 				<div class="whom-why__item">
-					<img class="item__image" src="https://avatars.mds.yandex.net/get-zen_doc/96780/pub_5b5c001ae9151400a9f45a4b_5b5c0021f5c3ac00a94e4165/scale_1200" alt="">
+					<img class="item__image" src="images/man.jpg" alt="">
 					<p class="item__title">Платёжеспособность</p>
 					<p class="item__desc">Клиенты относятся к группе со средним и высоким доходом.</p>
 				</div>
@@ -68,8 +69,8 @@
 				<p class="item__title">Мы предлагаем непрерывные мультимедийные материалы, со средней поездкой 20
 					минут</p>
 				<div class="video-block">
-					<video class="video" loop muted autoplay>
-						<source src="TTGifV2.mp4" type='video/ogg; codecs="theora, vorbis"'>
+					<video id="vid" class="video" playsinline loop autoplay muted poster="images/screen.png">
+						<source src="TTGifV2.mp4" type="video/mp4">
 					</video>
 					<img class="tablet" src="images/tablet.png" alt="">
 				</div>
@@ -203,11 +204,11 @@
 </div>
 
 <div class="popup" id="popup" style="display: none">
-	<form class="wrapper" id="form" action="sendForm.php" method="post" enctype="multipart/form-data">
+	<form class="wrapper" id="form" action="https://formspree.io/moqddvze" method="post" enctype="multipart/form-data">
 		<p class="popup__title">Чем мы можем Вам помочь?</p>
 		<div class="content">
 			<input class="input__name form-item" type="text" name="name" required placeholder="Имя *">
-			<input class="input__email form-item" type="email" name="email" required placeholder="E-mail *">
+			<input class="input__email form-item" type="email" name="_replyto" required placeholder="E-mail *">
 			<input class="input__phone form-item" type="number" name="number" required placeholder="Номер телефона *">
 			<select class="form-item" name="whoAreU" id="whoAreU">
 				<option selected disabled>Тип запроса</option>
@@ -216,7 +217,7 @@
 				<option value="Служба такси">Служба такси</option>
 				<option value="Другое">Другое</option>
 			</select>
-			<textarea class="form-item" name="text" id="textarea" cols="10" rows="4"
+			<textarea class="form-item" name="message" id="textarea" cols="10" rows="4"
 			          placeholder="Опишите свой проект"></textarea>
 		</div>
 		<input type="submit" name="submit" class="item__btn btn-hover gradient-btn" value="Отправить">
@@ -225,6 +226,7 @@
 
 <script>
     window.onload = function () {
+        document.getElementById('vid').play();
         document.getElementById('popup').addEventListener('click', function () {
             document.getElementById('popup').style.display = 'none';
         });
